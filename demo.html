@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/test">
+        <input type="hidden" name="hid">
+        <!--file:///D:/test?hid=&email=&password=&birtyDate=&color=%23000000-->
+        <div>
+            <label for="email">Введите email</label>
+            <input type="email" placeholder="Email пользователя" id="email" name="email" />
+        </div>
+
+        <div>
+            <label for="password">Введите пароль</label>
+            <input type="password" placeholder="Пароль пользователя" id="password" name="password" />
+        </div>
+
+        <div>
+            <label for="birtyDate">Введите дату рождения</label>
+            <input type="date" placeholder="Дата рождения пользователя" id="birtyDate" name="birtyDate" />
+        </div>
+
+        <div>
+            <label for="color">Выберите цвет</label>
+            <input type="color" placeholder="Цвет пользователя" id="color" name="color" />
+        </div>
+
+        <div>
+            <label>
+                <span>Число</span>
+                <input type="number" placeholder="Число" />
+            </label>
+        </div>
+
+        <button type="sumbit">Кнопка</button>
+        <button type="reset">Сброс</button>
+        <!--инпут в виде кнопки не рекомендуется!!!-->
+        <input type="button" value="Кнопка 2" />
+        <input type="submit" value="Кнопка submit" />
+    </form>
+    <button>Кнопка вне формы</button>
+
+    <form action="https://www.youtube.com/results">
+        <div>
+            <label for="query">Введите запрос</label>
+            <input type="text" placeholder="Запрос... " name="search_query" id="query" />
+            <button>Искать на YouTube</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
